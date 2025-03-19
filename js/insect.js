@@ -6,4 +6,6 @@ const timeEl = document.getElementbyId('time')
 const scoreEl = document.getElementbyId('score')
 const message = document.getElementbyId('message')
 
-start_btn.addEventListener('click)
+start_btn.addEventListener('click', () =>{
+    screen[0].classList.add('up')
+}
