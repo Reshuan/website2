@@ -120,3 +120,7 @@ h1{
     position: absolute;
 
 }
+
+.insect.caught {
+    transform: scale(0)
+}
