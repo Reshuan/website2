@@ -29,7 +29,7 @@ h1 {
     opacity: 0.9;
 }
 
-.screen {
+.screens {
     display: flex;
     flex-direction: column;
     align_items: center: justify-content: center;
