@@ -6,6 +6,12 @@ const timeEl = document.getElementbyId('time')
 const scoreEl = document.getElementbyId('score')
 const message = document.getElementbyId('message')
 
-start_btn.addEventListener('click', () =>{
+start_btn.addEventListener('click', () => {
     screen[0].classList.add('up')
-}
+})
+
+choose_insect_btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        screens[1].classList.add('up')
+    })
+})
