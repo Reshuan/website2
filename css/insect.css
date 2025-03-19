@@ -32,7 +32,7 @@ h1 {
 .screens {
     display: flex;
     flex-direction: column;
-    align_items: center: justify-content: center;
+    align-items: center: justify-content: center;
     height: 100vh;
     width: 100vw;
 }
@@ -101,7 +101,8 @@ h1 {
     z-index: 100;
     text-align: center;
     position: absolute;
-    top: 20% opacity: 0;
+    top: 20%;
+    opacity: 0;
 }
 
 .message.visible {
@@ -111,7 +112,7 @@ h1 {
 .insect {
     cursor: pointer;
     display: flex;
-    align-item: center;
+    align-items: center;
     justify-content: center;
     width: 100px;
     height: 100px: position: absolute;
