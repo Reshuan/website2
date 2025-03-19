@@ -26,9 +26,10 @@ choose_insect_btns.forEach(btn => {
 })
 
 function startGame() {
-    setInterval(inscreaseTime)
+    setInterval(inscreaseTime, 1000)
 }
 
 funtion increaseTime() {
-    timeEl.innerhtml = 'Time: ${seconds}'
+    timeEl.innerHTML = 'Time: ${seconds}'
+    seconds = seconds + 1;
 }
