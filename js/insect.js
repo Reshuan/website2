@@ -12,7 +12,7 @@ let score=0
 let selected_insect = {}
 
 
-start_btn.addEventListener('click',()=>{
+start_btn.addEventListener('click'()=>{
     screens[0].classList.add('up')
 })
 
@@ -40,9 +40,9 @@ function startGame(){
 
 
 function increaseTime(){
-    let s = seconds %60
+    let s = seconds % 60
     let m = Math.floor(seconds / 60)
-    if (s<10){
+    if (s < 10){
         s = '0${s}'
     }
     if (m<10){
