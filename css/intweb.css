@@ -5,9 +5,9 @@
 }
 
 body {
-    background-color: #516dff;
-    color: #fff;
-    font-family: 'Big Shoulders Stencil', sans-serif;
+    background-color: #FFF000;
+    color: #fff000;
+    font-family:'Big Shoulder Stencil', sans-serif;
     height: 100vh;
     margin: 0;
     text-align: center;
@@ -42,7 +42,7 @@ h1 {
     margin-top: -100vh;
 }
 
-.insects-list {
+.rbs-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -50,11 +50,15 @@ h1 {
     padding: 0;
 }
 
-.insects-list li {
+.rbs-list li {
     margin: 10px;
 }
 
-.choose-insect-btn {
+.rbs-list {
+    display: flex;
+}
+
+.choose-choice-btn {
     background-color: transparent;
     border: 2px solid #fff;
     color: #fff;
@@ -64,13 +68,13 @@ h1 {
     height: 150px;
 }
 
-.choose-insect-btn img {
+.choose-choice-btn img {
     width: 100px;
     height: 100px;
     object-fit: contain;
 }
 
-.choose-insect-btn:active {
+.choose-choice-btn:active {
     background-color: rgba(255, 255, 255, 0.7);
 }
 
@@ -80,37 +84,8 @@ h1 {
     position: relative;
 }
 
-.time,
-.score {
-    position: absolute;
-    top: 20px;
-}
 
-.time {
-    left: 20px;
-}
-
-.score {
-    right: 20px;
-}
-
-.message {
-    line-height: 1.7;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    padding: 20px;
-    z-index: 100;
-    text-align: center;
-    position: absolute;
-    top: 20%;
-    opacity: 0;
-}
-
-.message.visible {
-    opacity 1;
-}
-
-.insect {
+.rbs {
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -121,6 +96,3 @@ h1 {
 
 }
 
-.insect.caught {
-    transform: scale(0);
-}
