@@ -52,9 +52,6 @@ function increaseTime(){
     seconds=seconds+1;
 }
 
-
-
-
 function createInsect(){
     const insect = document,createElement('div')
     insect.classList.add('insect')
@@ -70,9 +67,6 @@ function createInsect(){
         scoreEl.innerHTML='Score: ${score}'
         insect.addEventListener('click',cathcInsect)
     })
-
-
-
 
     function catchInsect(){
         increaseScore()
@@ -94,20 +88,14 @@ function addInsects(){
     setTimeout(createInsect,1500)
 }
 
-
-
-
 function getRandomLocation(){
     const width = window.innerWidth
     const height = window.innerHeight
     console.log(Math.random())
-    const x = Math.random()* width
-    const y = Math.random() * height
+    const x = Math.random() * (width - 200) + 100
+    const y = Math.random() * (height - 200) + 100
     return {x,y}
 }
-
-
-
 
 .insect.caught()
 
