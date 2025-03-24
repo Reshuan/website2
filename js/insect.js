@@ -12,7 +12,7 @@ let score=0
 let selected_insect = {}
 
 
-start_btn.addEventListener('click'()=>{
+start_btn.addEventListener('click', ()=> {
     screens[0].classList.add('up')
 })
 
@@ -53,7 +53,7 @@ function increaseTime(){
 }
 
 function createInsect(){
-    const insect = document,createElement('div')
+    const insect = document.createElement('div')
     insect.classList.add('insect')
     insect.innerHTML = '<img src= "${selected_insect.src}" alt = "${selected_insect.alt}" >'
     const {x,y} = getRandomLocation()
@@ -97,6 +97,6 @@ function getRandomLocation(){
     return {x,y}
 }
 
-.insect.caught()
+//.insect.caught()
 
 
